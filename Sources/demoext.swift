@@ -19,13 +19,13 @@ func demoext (interp: TclInterp, objv: [TclObj]) -> String {
 //
 // This C linkage name is dependent on the name of the .so file
 // If the tcl code is
-//   load "./libSwiftTclDemoExt.so"
+//   load "./libSwiftTclExtDemo.so"
 // then the C initialization entrypoint has to be
 //   filename - "lib" and ".so"
 //   all lowercase
 //   captialize first character
 
-@_silgen_name("Swifttcldemoext_Init")
+@_silgen_name("Swifttclextdemo_Init")
 func Demoext_Init(_ interpPtr:UnsafeMutablePointer<Tcl_Interp>) -> Int {
 	let interp = TclInterp(interp: interpPtr)	
 	// Add the command to tcl
