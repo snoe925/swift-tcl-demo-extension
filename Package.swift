@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftTclDemoExt",
 	dependencies: [
-		.Package(url: "https://github.com/snoe925/swift-tcl.git", Version(1,1,4))
+		.Package(url: "https://github.com/snoe925/swift-tcl.git", Version(1,1,5))
 	]
 )
 
